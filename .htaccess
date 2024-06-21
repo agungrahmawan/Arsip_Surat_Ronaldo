@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+ErrorDocument 404 http://localhost/arsipsurat/404.php
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /path/to/404.php [L]
